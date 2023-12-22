@@ -1,1 +1,46 @@
+yamazakitoshiya@yamazakisatoshinarinoMacBook-Air ~ % cd /Users/yamazakitoshiya
+yamazakitoshiya@yamazakisatoshinarinoMacBook-Air ~ % mkdir git_challenge
+yamazakitoshiya@yamazakisatoshinarinoMacBook-Air ~ % cd git_challenge
+yamazakitoshiya@yamazakisatoshinarinoMacBook-Air git_challenge % git init
+Initialized empty Git repository in /Users/yamazakitoshiya/git_challenge/.git/
+yamazakitoshiya@yamazakisatoshinarinoMacBook-Air git_challenge % git add hello_world.txt
 
+yamazakitoshiya@yamazakisatoshinarinoMacBook-Air git_challenge % git commit -m "hello_world.txtを追加"
+
+[main (root-commit) 42dc37a] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+yamazakitoshiya@yamazakisatoshinarinoMacBook-Air git_challenge % git status
+
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+yamazakitoshiya@yamazakisatoshinarinoMacBook-Air git_challenge % git add hello_world.txt
+yamazakitoshiya@yamazakisatoshinarinoMacBook-Air git_challenge % git commit -m "日本語訳 を追記"
+[main c91248c] 日本語訳を追記
+ 1 file changed, 2 insertions(+)
+yamazakitoshiya@yamazakisatoshinarinoMacBook-Air git_challenge % git status
+On branch main
+nothing to commit, working tree clean
+yamazakitoshiya@yamazakisatoshinarinoMacBook-Air git_challenge % git log --onelin 
+fatal: unrecognized argument: --onelin
+yamazakitoshiya@yamazakisatoshinarinoMacBook-Air git_challenge % git log
+commit c91248c868878481517fc271994b2cbe0ff95073 (HEAD -> main)
+Author: yama2832 <yzaki2832@gmeil.com>
+Date:   Fri Dec 22 15:03:57 2023 +0900
+
+    日本語訳を追記
+
+commit 42dc37a2a44dd6e78da571f467568f8eb57d0786
+Author: yama2832 <yzaki2832@gmeil.com>
+Date:   Fri Dec 22 14:59:52 2023 +0900
+
+    hello_world.txtを追加
+yamazakitoshiya@yamazakisatoshinarinoMacBook-Air git_challenge % git log --oneline
+c91248c (HEAD -> main) 日本語訳を追記
+42dc37a hello_world.txtを追加
+yamazakitoshiya@yamazakisatoshinarinoMacBook-Air git_challenge % 
